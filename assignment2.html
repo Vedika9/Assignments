@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2</title>
+    <style>
+        form {
+            display: block;
+            background-color: white;
+            margin-left: 35%;
+            margin-right: 35%;
+            margin-top: 15%;
+            border-radius: 10px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+        .inputs input[type="email"],
+.inputs input[type="text"] {
+    width: 98%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+div{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+        button[type="submit"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(1, 190, 102);">
+    <form>
+        <h3 style="text-align: center;">Login</h3><br>
+        <div class="inputs">
+            <input type="email" placeholder="Email" name="Email"><br><br>
+            <input type="text" placeholder="Password" name="Password">
+            <input type="checkbox" name="show" value="show">Show Password
+        </div><br><br>
+        <center><button type="submit" name="signin" value="signin">SIGN IN</button></center><br>
+        <p>Forgot
+        <a href="#"  style="text-decoration: none;">Username / Password </a>
+        ?</p>
+        <p>Don't Have an Account? 
+        <a href="#" style="text-decoration: none;">Signup</a>
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <style>
+       /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px;
+    width: 250px;
+}
+
+button {
+    padding: 10px;
+    background: rgb(61, 61, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 270px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #214288;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deletebtn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.deletebtn:hover {
+    background: #c82333;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <h2>TO DO LIST</h2><br>
+        <input id="taskinput" type="text" name="list" placeholder="enter new task"><br>
+        <button id="addtask">Add Task</button><br>
+        <ul id="tasklist">
+        </ul>
+    </form>
+</div>
+    <script src="assignment8.js">
+    </script>
+</body>
+</html>

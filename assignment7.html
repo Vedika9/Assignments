@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        form{
+            display: block;
+            margin-left: 35%;
+            margin-right: 35%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            text-align: center;
+        }
+        label{
+            margin: 10px;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            margin: 10px;
+        }
+        button{
+            width: 250px;
+            height: 30px;
+            margin: 10px;
+            color: white;
+            background-color: rgb(127, 127, 255);
+            border: none;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Login</h2>
+        <label>Email address</label><br>
+        <input id="email" type="email" placeholder="abc@gmail.com" name="email"><br>
+        <div id="emailerror" style="color: red;"></div><br>
+        <label>Password</label><br>
+        <input id="pass" type="password" placeholder="Password" name="pass"><br>
+        <div id="passerror" style="color: red;"></div><br>
+        <button type="button" onclick="validate()">Login</button>
+    </form>
+    <script src="assignment7.js"></script>
+</body>
+</html>
